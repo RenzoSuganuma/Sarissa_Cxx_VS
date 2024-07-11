@@ -10,11 +10,11 @@ class SarissaBTNode;
 class SarissaBTNode {
 protected:
 	std::list< std::function< void() > > OnNextNodeChanged;
-	const SarissaBTNode* next_;
-	const int id_;
+	SarissaBTNode* next_;
+	int id_;
 
 public:
-	const SarissaBTNode* GetThisNode() const {
+	SarissaBTNode* GetThisNode() const {
 		return this;
 	}
 
