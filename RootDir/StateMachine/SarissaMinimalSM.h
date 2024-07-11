@@ -19,14 +19,20 @@ namespace Sarissa {
 
 		public:
 			template < typename T >
-			void ResistNode( T& node ) {
-				int id = nodes_.size();
-				SarissaBTNode* casted = static_cast< SarissaBTNode* > (T);
-				if ( casted != nullptr ) {
-					casted->SetId(id);
-				}
-			}
+			void ResistNode(T& node);
+
+			template < typename T1, typename T2 >
+			void ApplyTransition(T1& node1, T2& node2);
+
+			void UpdateTransition(int id, bool condition);
+
+			void SetCurrentNodeAs(int id);
+
+			template < typename T >
+			void SetCurrentNodeAs(T& node1);
+
+			void StartMachine();
 		};
 	}
 }
-#endif // !_SARISSAMINI_SM_
+#endif /* !_SARISSAMINI_SM_ */

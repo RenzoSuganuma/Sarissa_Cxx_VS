@@ -15,7 +15,7 @@ protected:
 
 
 public:
-	void SetNextNode( SarissaBTNode* node ) {
+	void SetNextNode(SarissaBTNode* node) {
 		next_ = node;
 	};
 
@@ -23,7 +23,7 @@ public:
 		return next_;
 	}
 
-	void SetId( int id ) {
+	void SetId(int id) {
 		id_ = id;
 	}
 
