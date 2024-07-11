@@ -18,12 +18,18 @@
     <ClCompile Include="Sarissa_Cxx_VS.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="RootDir\StateMachine\SarissaBTNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RootDir\StateMachine\SarissaMinimalSM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SarissaMinimalSM.h">
+    <ClInclude Include="RootDir\StateMachine\SarissaBTNode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SarissaBTNode.h">
+    <ClInclude Include="RootDir\StateMachine\SarissaMinimalSM.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

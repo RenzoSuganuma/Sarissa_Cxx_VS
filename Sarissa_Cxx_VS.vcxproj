@@ -127,11 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="RootDir\StateMachine\SarissaBTNode.cpp" />
+    <ClCompile Include="RootDir\StateMachine\SarissaMinimalSM.cpp" />
     <ClCompile Include="Sarissa_Cxx_VS.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SarissaBTNode.h" />
-    <ClInclude Include="SarissaMinimalSM.h" />
+    <ClInclude Include="RootDir\StateMachine\SarissaBTNode.h" />
+    <ClInclude Include="RootDir\StateMachine\SarissaMinimalSM.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
