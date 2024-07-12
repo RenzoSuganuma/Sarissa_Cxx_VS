@@ -31,6 +31,14 @@ void setup() {
 
 	sm->ResistNode(node1);
 	sm->ResistNode(node2);
+
+	sm->ApplyTransition(node1, node2);
+
+	sm->StartMachine();
+	sm->UpdateMachine();
+	sm->UpdateTransition(0, true);
+	sm->UpdateMachine();
+	sm->EndMachine();
 }
 
 void mainloop() {

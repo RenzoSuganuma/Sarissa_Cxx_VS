@@ -12,15 +12,22 @@ namespace Sarissa {
 			SarissaBTNode* next_;
 			int id_;
 
-
 		public:
-			void SetNextNode(SarissaBTNode* node);
+			void SetNextNode(SarissaBTNode* node) {
+				next_ = node;
+			};
 
-			const SarissaBTNode* GetNextNode() const;
+			const SarissaBTNode* GetNextNode() const {
+				return next_;
+			}
 
-			void SetId(int id);
+			void SetId(int id) {
+				id_ = id;
+			}
 
-			const int GetId() const;
+			int GetId() const {
+				return id_;
+			}
 
 			virtual void StartNode() = 0;
 

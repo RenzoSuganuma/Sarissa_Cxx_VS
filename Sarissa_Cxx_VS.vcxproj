@@ -127,8 +127,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="SarissaRootDir\StateMachine\SarissaBTNode.cpp" />
-    <ClCompile Include="SarissaRootDir\StateMachine\SarissaMinimalSM.cpp" />
     <ClCompile Include="Sarissa_Cxx_VS.cpp" />
   </ItemGroup>
   <ItemGroup>
