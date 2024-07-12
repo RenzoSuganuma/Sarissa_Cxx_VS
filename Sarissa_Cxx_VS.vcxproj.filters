@@ -18,18 +18,24 @@
     <ClCompile Include="Sarissa_Cxx_VS.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="RootDir\StateMachine\SarissaBTNode.cpp">
+    <ClCompile Include="SarissaRootDir\StateMachine\SarissaBTNode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="RootDir\StateMachine\SarissaMinimalSM.cpp">
+    <ClCompile Include="SarissaRootDir\StateMachine\SarissaMinimalSM.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="RootDir\StateMachine\SarissaBTNode.h">
+    <ClInclude Include="SarissaRootDir\StateMachine\SarissaBTNode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RootDir\StateMachine\SarissaMinimalSM.h">
+    <ClInclude Include="SarissaRootDir\StateMachine\SarissaMinimalSM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SarissaRootDir\StateMachine\Sample_files\node1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SarissaRootDir\StateMachine\Sample_files\node2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
