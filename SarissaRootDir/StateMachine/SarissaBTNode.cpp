@@ -1,19 +1,19 @@
 #include "SarissaBTNode.h"
 
-using Sarissa::MinimalSM::SarissaBTNode;
+//using Sarissa::MinimalSM::SarissaBTNode;
 
-void SarissaBTNode::SetNextNode(SarissaBTNode* node) {
+void Sarissa::MinimalSM::SarissaBTNode::SetNextNode(SarissaBTNode* node) {
 	next_ = node;
 };
 
-const SarissaBTNode* SarissaBTNode::GetNextNode() const {
+const Sarissa::MinimalSM::SarissaBTNode* Sarissa::MinimalSM::SarissaBTNode::GetNextNode() const {
 	return next_;
 }
 
-void SarissaBTNode::SetId(int id) {
+void Sarissa::MinimalSM::SarissaBTNode::SetId(int id) {
 	id_ = id;
 }
 
-const int SarissaBTNode::GetId() const {
+const int Sarissa::MinimalSM::SarissaBTNode::GetId() const {
 	return id_;
 }

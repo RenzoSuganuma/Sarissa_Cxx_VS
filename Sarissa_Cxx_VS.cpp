@@ -8,6 +8,8 @@ void setup();
 void mainloop();
 void end();
 
+class SarissaMinimalSM;
+
 Sarissa::MinimalSM::SarissaMinimalSM* sm;
 Sample_Node1* node1;
 Sample_Node2* node2;
@@ -27,6 +29,8 @@ void setup() {
 	node1 = new Sample_Node1;
 	node2 = new Sample_Node2;
 
+	sm->ResistNode(node1);
+	sm->ResistNode(node2);
 }
 
 void mainloop() {
