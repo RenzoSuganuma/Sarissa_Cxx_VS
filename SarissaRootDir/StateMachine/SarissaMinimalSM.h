@@ -1,9 +1,7 @@
-#ifndef _SARISSAMINI_SM_
+#ifndef _SARISSA_MINI_SM_
 #define _SARISSA_MINI_SM_
 
 #include "unordered_map"
-#include "stdexcept"
-#include "exception"
 #include "iostream"
 
 namespace Sarissa {

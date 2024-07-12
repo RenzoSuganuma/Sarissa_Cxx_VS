@@ -8,10 +8,7 @@ void setup();
 void mainloop();
 void end();
 
-using Sarissa::MinimalSM::SarissaMinimalSM;
-using Sarissa::MinimalSM::SarissaBTNode;
-
-SarissaMinimalSM* sm;
+Sarissa::MinimalSM::SarissaMinimalSM* sm;
 Sample_Node1* node1;
 Sample_Node2* node2;
 
@@ -26,10 +23,9 @@ int main()
 }
 
 void setup() {
-	sm = new SarissaMinimalSM;
+	sm = new Sarissa::MinimalSM::SarissaMinimalSM;
 	node1 = new Sample_Node1;
 	node2 = new Sample_Node2;
-
 
 }
 
