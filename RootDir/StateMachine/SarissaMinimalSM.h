@@ -6,10 +6,12 @@
 #include "exception"
 #include "iostream"
 
-class SarissaBTNode;
-
 namespace Sarissa {
 	namespace MinimalSM {
+
+		// ‘O•ûéŒ¾
+		class SarissaBTNode;
+
 		class SarissaMinimalSM final {
 		private:
 			std::unordered_map< int, SarissaBTNode* > nodes_;
@@ -32,6 +34,10 @@ namespace Sarissa {
 			void SetCurrentNodeAs(T& node1);
 
 			void StartMachine();
+
+			void UpdateMachine();
+
+			void EndMachine();
 		};
 	}
 }

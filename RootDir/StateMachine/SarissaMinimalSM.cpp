@@ -47,3 +47,31 @@ void SarissaMinimalSM::StartMachine() {
 	currentNodeId_ = 0;
 	nodes_[currentNodeId_]->StartNode();
 }
+
+void SarissaMinimalSM::UpdateMachine() {
+	if (!isRunning_) return;
+
+	nodes_[currentNodeId_]->UpdateNode();
+
+	for (int i = 0; i < nodes_.size(); ++i) {
+		auto transition_is_contained = transitions_.find(i) != transitions_.end();
+		auto nodes_is_not_null = nodes_[currentNodeId_]->GetNextNode() != nullptr
+			&& nodes_[i]->GetNextNode() != nullptr;
+		auto nodes_is_same = nodes_[currentNodeId_]->GetNextNode()->GetId()
+			== nodes_[i]->GetNextNode()->GetId();
+
+		if (transition_is_contained && nodes_is_not_null && nodes_is_same) {
+			nodes_[currentNodeId_]->EndNode();
+
+			currentNodeId_ = nodes_[currentNodeId_]->GetNextNode()->GetId();
+
+			nodes_[currentNodeId_]->StartNode();
+		}
+	}
+}
+
+void SarissaMinimalSM::EndMachine() {
+	isRunning_ = false;
+
+	nodes_[currentNodeId_]->EndNode();
+}
