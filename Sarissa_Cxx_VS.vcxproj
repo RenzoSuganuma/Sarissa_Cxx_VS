@@ -133,8 +133,9 @@
     <ClInclude Include="SarissaRootDir\Action\Action.h" />
     <ClInclude Include="SarissaRootDir\StateMachine\Sample_files\Node1.h" />
     <ClInclude Include="SarissaRootDir\StateMachine\Sample_files\Node2.h" />
-    <ClInclude Include="SarissaRootDir\StateMachine\SarissaBTNode.h" />
-    <ClInclude Include="SarissaRootDir\StateMachine\SarissaMinimalSM.h" />
+    <ClInclude Include="SarissaRootDir\StateMachine\Sample_files\Node3.h" />
+    <ClInclude Include="SarissaRootDir\StateMachine\SarissaSequenceMachineNode.h" />
+    <ClInclude Include="SarissaRootDir\StateMachine\SarissaSequenceMachine.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

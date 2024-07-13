@@ -1,18 +1,18 @@
-#ifndef _SARISSA_MINI_SM_H_
-#define _SARISSA_MINI_SM_H_
+#ifndef _SARISSA_SEQM_H_
+#define _SARISSA_SEQM_H_
 
-#include "SarissaBTNode.h"
+#include "SarissaSequenceMachineNode.h"
 #include "unordered_map"
 #include "iostream"
 
 namespace Sarissa
 {
-	namespace MinimalSM
+	namespace SequenceMachine
 	{
-		class SarissaMinimalSM final
+		class SarissaSequenceMachine final
 		{
 		private:
-			std::unordered_map< int, SarissaBTNode* > nodes_;
+			std::unordered_map< int, SarissaSequenceMachineNode* > nodes_;
 			std::unordered_map< int, bool > transitions_;
 			int currentNodeId_;
 			bool isRunning_;
@@ -22,7 +22,7 @@ namespace Sarissa
 			void ResistNode(T* node)
 			{
 				int id = nodes_.size();
-				SarissaBTNode* casted = static_cast<SarissaBTNode*> (node);
+				SarissaSequenceMachineNode* casted = static_cast<SarissaSequenceMachineNode*> (node);
 				if (casted != nullptr) {
 					casted->SetId(id);
 					nodes_.insert(std::make_pair(casted->GetId(), casted));
@@ -32,8 +32,8 @@ namespace Sarissa
 			template < typename T1, typename T2 >
 			void ApplyTransition(T1* node1, T2* node2)
 			{
-				SarissaBTNode* casted_node1 = static_cast<SarissaBTNode*> (node1);
-				SarissaBTNode* casted_node2 = static_cast<SarissaBTNode*> (node2);
+				SarissaSequenceMachineNode* casted_node1 = static_cast<SarissaSequenceMachineNode*> (node1);
+				SarissaSequenceMachineNode* casted_node2 = static_cast<SarissaSequenceMachineNode*> (node2);
 
 				if (casted_node1 != nullptr && casted_node2 != nullptr) {
 					casted_node1->SetNextNode(casted_node2);
@@ -56,7 +56,7 @@ namespace Sarissa
 			template < typename T >
 			void SetCurrentNodeAs(T* node1) 
 			{
-				SarissaBTNode* casted_node = static_cast<SarissaBTNode*>(node1);
+				SarissaSequenceMachineNode* casted_node = static_cast<SarissaSequenceMachineNode*>(node1);
 				if (casted_node != nullptr) {
 					currentNodeId_ = casted_node->GetId();
 				}
@@ -103,4 +103,4 @@ namespace Sarissa
 		};
 	}
 }
-#endif // !_SARISSA_MINI_SM_H_
+#endif // !_SARISSA_SEQM_H_

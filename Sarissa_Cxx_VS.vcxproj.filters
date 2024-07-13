@@ -13,11 +13,11 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Header Files\StateMachine">
-      <UniqueIdentifier>{c331d94c-ab7a-4a95-89ed-9774d8436c87}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Action">
       <UniqueIdentifier>{f1d45f5c-052c-4c1d-8abd-e7252651a6b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\SequenceMachine">
+      <UniqueIdentifier>{c331d94c-ab7a-4a95-89ed-9774d8436c87}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -27,19 +27,22 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SarissaRootDir\StateMachine\Sample_files\Node1.h">
-      <Filter>Header Files\StateMachine</Filter>
+      <Filter>Header Files\SequenceMachine</Filter>
     </ClInclude>
     <ClInclude Include="SarissaRootDir\StateMachine\Sample_files\Node2.h">
-      <Filter>Header Files\StateMachine</Filter>
+      <Filter>Header Files\SequenceMachine</Filter>
     </ClInclude>
-    <ClInclude Include="SarissaRootDir\StateMachine\SarissaBTNode.h">
-      <Filter>Header Files\StateMachine</Filter>
+    <ClInclude Include="SarissaRootDir\StateMachine\SarissaSequenceMachineNode.h">
+      <Filter>Header Files\SequenceMachine</Filter>
     </ClInclude>
-    <ClInclude Include="SarissaRootDir\StateMachine\SarissaMinimalSM.h">
-      <Filter>Header Files\StateMachine</Filter>
+    <ClInclude Include="SarissaRootDir\StateMachine\SarissaSequenceMachine.h">
+      <Filter>Header Files\SequenceMachine</Filter>
     </ClInclude>
     <ClInclude Include="SarissaRootDir\Action\Action.h">
       <Filter>Header Files\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="SarissaRootDir\StateMachine\Sample_files\Node3.h">
+      <Filter>Header Files\SequenceMachine</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

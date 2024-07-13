@@ -2,12 +2,12 @@
 
 #define OUT std::cout
 
-#include "../SarissaBTNode.h"
+#include "../SarissaSequenceMachineNode.h"
 #include "iostream"
 
-using Sarissa::MinimalSM::SarissaBTNode;
+using Sarissa::SequenceMachine::SarissaSequenceMachineNode;
 
-class Sample_Node2 : public SarissaBTNode
+class Sample_Node2 : public SarissaSequenceMachineNode
 {
 	void StartNode() override 
 	{

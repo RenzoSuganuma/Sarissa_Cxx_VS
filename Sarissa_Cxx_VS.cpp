@@ -1,4 +1,8 @@
-﻿#include "SarissaRootDir/Action/Action.h"
+﻿#include "SarissaRootDir/StateMachine/Sample_files/Node1.h"
+#include "SarissaRootDir/StateMachine/Sample_files/Node2.h"
+#include "SarissaRootDir/StateMachine/Sample_files/Node3.h"
+#include "SarissaRootDir/StateMachine/SarissaMinimalSM.h"
+#include "SarissaRootDir/StateMachine/SarissaBTNode.h"
 #include "iostream"
 
 void setup();
@@ -16,22 +20,23 @@ int main()
 
 void setup()
 {
-	SarissaAction* act = new SarissaAction;
+	Sarissa::SequenceMachine::SarissaSequenceMachine* sm = new Sarissa::SequenceMachine::SarissaSequenceMachine;
+	Sample_Node1* n1 = new Sample_Node1;
+	Sample_Node2* n2 = new Sample_Node2;
+	Sample_Node3* n3 = new Sample_Node3;
 
-	act->AddAction([]() { std::cout << "1\n"; });
-	act->AddAction([]() { std::cout << "2\n"; });
-	act->AddAction([]() { std::cout << "3\n"; });
-	act->AddAction([]() { std::cout << "4\n"; });
-	act->AddAction([]() { std::cout << "5\n"; });
+	sm->ResistNode(n1);
+	sm->ResistNode(n2);
+	sm->ResistNode(n3);
 
-	auto b = act->Begin();
-	auto e = act->End();
-	e--;
+	sm->ApplyTransition(n1, n2);
+	sm->ApplyTransition(n1, n3);
 
-	act->RemoveAction(b);
-	act->RemoveAction(e);
-
-	act->Invoke();
+	sm->StartMachine();
+	sm->UpdateMachine();
+	sm->UpdateTransition(1, true);
+	sm->UpdateMachine();
+	sm->EndMachine();
 }
 
 void mainloop()

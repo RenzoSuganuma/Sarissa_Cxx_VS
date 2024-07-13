@@ -1,27 +1,27 @@
-#ifndef _SARISSA_BT_NODE_H_
-#define _SARISSA_BT_NODE_H_
+#ifndef _SARISSA_SEQ_M_NODE_H_
+#define _SARISSA_SEQ_M_NODE_H_
 
 #include "functional"
 #include "list"
 
 namespace Sarissa
 {
-	namespace MinimalSM 
+	namespace SequenceMachine 
 	{
-		class SarissaBTNode
+		class SarissaSequenceMachineNode
 		{
 		protected:
 			std::list< std::function< void() > > OnNextNodeChanged;
-			SarissaBTNode* next_;
+			SarissaSequenceMachineNode* next_;
 			int id_;
 
 		public:
-			void SetNextNode(SarissaBTNode* node)
+			void SetNextNode(SarissaSequenceMachineNode* node)
 			{
 				next_ = node;
 			};
 
-			const SarissaBTNode* GetNextNode() const
+			const SarissaSequenceMachineNode* GetNextNode() const
 			{
 				return next_;
 			}
@@ -45,4 +45,4 @@ namespace Sarissa
 	}
 }
 
-#endif // !_SARISSA_BT_NODE_H_
+#endif // !_SARISSA_SEQ_M_NODE_H_
