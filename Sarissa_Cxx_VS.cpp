@@ -1,8 +1,8 @@
-﻿#include <iostream>
-#include "SarissaRootDir/StateMachine/Sample_files/node1.h"
+﻿#include "SarissaRootDir/StateMachine/Sample_files/node1.h"
 #include "SarissaRootDir/StateMachine/Sample_files/node2.h"
 #include "SarissaRootDir/StateMachine/SarissaMinimalSM.h"
 #include "SarissaRootDir/StateMachine/SarissaBTNode.h"
+#include "iostream"
 
 void setup();
 void mainloop();
@@ -13,7 +13,6 @@ class SarissaMinimalSM;
 Sarissa::MinimalSM::SarissaMinimalSM* sm;
 Sample_Node1* node1;
 Sample_Node2* node2;
-
 
 int main()
 {

@@ -1,6 +1,6 @@
 #pragma once
 
-#define OUT std::wcout
+#define OUT std::cout
 
 #include "../SarissaBTNode.h"
 #include "iostream"
