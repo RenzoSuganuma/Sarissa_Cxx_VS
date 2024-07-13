@@ -1,5 +1,5 @@
-#ifndef _SARISSA_BT_NODE_
-#define _SARISSA_BT_NODE_
+#ifndef _SARISSA_BT_NODE_H_
+#define _SARISSA_BT_NODE_H_
 
 #include "functional"
 #include "list"
@@ -45,4 +45,4 @@ namespace Sarissa
 	}
 }
 
-#endif // !_SARISSA_BT_NODE_
+#endif // !_SARISSA_BT_NODE_H_

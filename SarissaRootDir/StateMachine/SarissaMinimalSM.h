@@ -1,5 +1,5 @@
-#ifndef _SARISSA_MINI_SM_
-#define _SARISSA_MINI_SM_
+#ifndef _SARISSA_MINI_SM_H_
+#define _SARISSA_MINI_SM_H_
 
 #include "SarissaBTNode.h"
 #include "unordered_map"
@@ -103,4 +103,4 @@ namespace Sarissa
 		};
 	}
 }
-#endif /* !_SARISSAMINI_SM_ */
+#endif // !_SARISSA_MINI_SM_H_
