@@ -7,16 +7,20 @@
 
 using Sarissa::MinimalSM::SarissaBTNode;
 
-class Sample_Node1 : public SarissaBTNode {
-	void StartNode() override {
+class Sample_Node1 : public SarissaBTNode
+{
+	void StartNode() override 
+	{
 		OUT << " Sample_Node1:Start\n ";
 	}
 
-	void UpdateNode() override {
+	void UpdateNode() override 
+	{
 		OUT << " Sample_Node1:Update\n ";
 	}
 
-	void EndNode() override {
+	void EndNode() override 
+	{
 		OUT << " Sample_Node1:End\n ";
 	}
 };

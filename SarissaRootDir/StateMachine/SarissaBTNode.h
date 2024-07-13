@@ -4,28 +4,35 @@
 #include "functional"
 #include "list"
 
-namespace Sarissa {
-	namespace MinimalSM {
-		class SarissaBTNode {
+namespace Sarissa
+{
+	namespace MinimalSM 
+	{
+		class SarissaBTNode
+		{
 		protected:
 			std::list< std::function< void() > > OnNextNodeChanged;
 			SarissaBTNode* next_;
 			int id_;
 
 		public:
-			void SetNextNode(SarissaBTNode* node) {
+			void SetNextNode(SarissaBTNode* node)
+			{
 				next_ = node;
 			};
 
-			const SarissaBTNode* GetNextNode() const {
+			const SarissaBTNode* GetNextNode() const
+			{
 				return next_;
 			}
 
-			void SetId(int id) {
+			void SetId(int id)
+			{
 				id_ = id;
 			}
 
-			int GetId() const {
+			int GetId() const 
+			{
 				return id_;
 			}
 
