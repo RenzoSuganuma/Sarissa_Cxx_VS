@@ -131,11 +131,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SarissaRootDir\Action\Action.h" />
-    <ClInclude Include="SarissaRootDir\StateMachine\Sample_files\Node1.h" />
-    <ClInclude Include="SarissaRootDir\StateMachine\Sample_files\Node2.h" />
-    <ClInclude Include="SarissaRootDir\StateMachine\Sample_files\Node3.h" />
-    <ClInclude Include="SarissaRootDir\StateMachine\SarissaSequenceMachineNode.h" />
-    <ClInclude Include="SarissaRootDir\StateMachine\SarissaSequenceMachine.h" />
+    <ClInclude Include="SarissaRootDir\SequenceMachine\SarissaSequenceMachine.h" />
+    <ClInclude Include="SarissaRootDir\SequenceMachine\SarissaSequenceMachineNode.h" />
+    <ClInclude Include="SarissaRootDir\StateMachine\ISarissaSMState.h" />
+    <ClInclude Include="SarissaRootDir\StateMachine\SarissaSM.h" />
+    <ClInclude Include="SarissaRootDir\StateMachine\SarissaSMTransition.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

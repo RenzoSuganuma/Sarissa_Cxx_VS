@@ -26,23 +26,23 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SarissaRootDir\StateMachine\Sample_files\Node1.h">
+    <ClInclude Include="SarissaRootDir\SequenceMachine\SarissaSequenceMachine.h">
       <Filter>Header Files\SequenceMachine</Filter>
     </ClInclude>
-    <ClInclude Include="SarissaRootDir\StateMachine\Sample_files\Node2.h">
-      <Filter>Header Files\SequenceMachine</Filter>
-    </ClInclude>
-    <ClInclude Include="SarissaRootDir\StateMachine\SarissaSequenceMachineNode.h">
-      <Filter>Header Files\SequenceMachine</Filter>
-    </ClInclude>
-    <ClInclude Include="SarissaRootDir\StateMachine\SarissaSequenceMachine.h">
+    <ClInclude Include="SarissaRootDir\SequenceMachine\SarissaSequenceMachineNode.h">
       <Filter>Header Files\SequenceMachine</Filter>
     </ClInclude>
     <ClInclude Include="SarissaRootDir\Action\Action.h">
       <Filter>Header Files\Action</Filter>
     </ClInclude>
-    <ClInclude Include="SarissaRootDir\StateMachine\Sample_files\Node3.h">
-      <Filter>Header Files\SequenceMachine</Filter>
+    <ClInclude Include="SarissaRootDir\StateMachine\SarissaSM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SarissaRootDir\StateMachine\ISarissaSMState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SarissaRootDir\StateMachine\SarissaSMTransition.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
