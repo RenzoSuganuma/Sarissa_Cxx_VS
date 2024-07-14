@@ -1,8 +1,8 @@
-﻿#include "SarissaRootDir/StateMachine/Sample_files/Node1.h"
-#include "SarissaRootDir/StateMachine/Sample_files/Node2.h"
-#include "SarissaRootDir/StateMachine/Sample_files/Node3.h"
-#include "SarissaRootDir/StateMachine/SarissaMinimalSM.h"
-#include "SarissaRootDir/StateMachine/SarissaBTNode.h"
+﻿#include "SarissaRootDir/SequenceMachine/Sample_files/Node1.h"
+#include "SarissaRootDir/SequenceMachine/Sample_files/Node2.h"
+#include "SarissaRootDir/SequenceMachine/Sample_files/Node3.h"
+#include "SarissaRootDir/SequenceMachine/SarissaSequenceMachine.h"
+#include "SarissaRootDir/SequenceMachine/SarissaSequenceMachineNode.h"
 #include "iostream"
 
 void setup();
