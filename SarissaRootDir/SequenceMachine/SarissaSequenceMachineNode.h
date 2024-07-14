@@ -1,5 +1,4 @@
-#ifndef _SARISSA_SEQ_M_NODE_H_
-#define _SARISSA_SEQ_M_NODE_H_
+#pragma once
 
 #include "functional"
 #include "list"
@@ -44,5 +43,3 @@ namespace Sarissa
 		};
 	}
 }
-
-#endif // !_SARISSA_SEQ_M_NODE_H_

@@ -1,5 +1,4 @@
-#ifndef _SARISSA_SEQM_H_
-#define _SARISSA_SEQM_H_
+#pragma once
 
 #include "SarissaSequenceMachineNode.h"
 #include "unordered_map"
@@ -103,4 +102,3 @@ namespace Sarissa
 		};
 	}
 }
-#endif // !_SARISSA_SEQM_H_

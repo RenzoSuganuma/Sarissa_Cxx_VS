@@ -1,5 +1,4 @@
-#ifndef _ACTION_H_
-#define _ACTION_H_
+#pragma once
 
 #include "functional"
 #include "list"
@@ -61,5 +60,3 @@ public:
 		}
 	}
 };
-
-#endif // !_ACTION_H_
